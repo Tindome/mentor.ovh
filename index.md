@@ -8,3 +8,5 @@ title: Blogging Like a Hacker
 {{ site.time | date_to_xmlschema }}
 
 {{ "/assets/style.css" | relative_url }}
+
+essai
