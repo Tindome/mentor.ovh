@@ -1,4 +1,4 @@
----
+--
 layout: _layouts/default.html
 title: Blogging Like a Hacker
 ---
@@ -8,5 +8,3 @@ title: Blogging Like a Hacker
 {{ site.time | date_to_xmlschema }}
 
 {{ "/assets/style.css" | relative_url }}
-
-flûte ça a fonctionné une fois pourquoi ?.???
