@@ -1,5 +1,5 @@
 --
-layout: default
+layout:  _layouts/default.html
 title: Blogging Like a Hacker
 ---
 
