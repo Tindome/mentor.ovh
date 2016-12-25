@@ -25,6 +25,16 @@ title: "Ed."
 
 </div> 
 
+{% for post in site.posts limit:1 %}
+  {% include postheader.html %}
+
+  <article class="post-content">
+    {{ post.content }}
+  </article>
+
+  {% include postfooter.html %}
+{% endfor %}
+
 
 Premiere edition a 16:07
 Deuxieme edition a 16:04:40
