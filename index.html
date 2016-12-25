@@ -32,6 +32,13 @@ title: "Ed."
     {{ post.content }}
   </article>
 
+{% if post.content | readtime == 0 %}
+      less than a minute
+    {% else %}
+      {{ post.content | readtime } minutes
+    {% endif %}
+
+
 
 {% endfor %}
 
