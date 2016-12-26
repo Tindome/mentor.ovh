@@ -1,5 +1,5 @@
 module Jekyll
-  class DownloadSttTag < Liquid::Tag
+  class DownloadTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
       @text = text
