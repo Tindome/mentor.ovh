@@ -2,90 +2,215 @@
 Typography
 ------------------------------------------------------------------- */
 
-a {
-	color: rgba(17, 17, 17, 0.55);
+//fonts
+$font_0: Lato;
+$font_1: sans-serif;
+$font_2: Libre Baskerville;
+$font_3: Times New Roman;
+
+//@extend-elements
+//original selectors
+//.module, .module-small
+%extend_1 {
+	padding: 140px 0;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
-a:hover, a:focus {
+//original selectors
+//a:hover, a:focus
+%extend_2 {
 	text-decoration: none;
-	color: #111;
+	color: $color_woodsmoke_approx;
 	outline: 0;
 }
 
-.bg-dark a {
-	color: #aaa;
-}
-
-.bg-dark a:hover,
-.bg-dark a:focus {
-	color: #fff;
-}
-
-.text-light {
-	color: rgba(255, 255, 255, 0.7);
-}
-
-.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6,
-.text-light .h1, .text-light .h2, .text-light .h3, .text-light .h4, .text-light .h5, .text-light .h6 {
-	color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+//original selectors
+//h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+%extend_3 {
 	line-height: 1.4;
 	font-weight: 400;
-	color: #111;
+	color: $color_woodsmoke_approx;
 }
 
-h1, .h1 {
+
+.wrapper {
+	background: $white;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+}
+.module {
+	@extend %extend_1;
+}
+.module-small {
+	@extend %extend_1;
+	padding: 70px 0;
+}
+a {
+	color: $color_woodsmoke_55_approx;
+	&:hover {
+		@extend %extend_2;
+	}
+	&:focus {
+		@extend %extend_2;
+	}
+}
+.text-light {
+	color: $white_70;
+	h1 {
+		color: $white;
+	}
+	h2 {
+		color: $white;
+	}
+	h3 {
+		color: $white;
+	}
+	h4 {
+		color: $white;
+	}
+	h5 {
+		color: $white;
+	}
+	h6 {
+		color: $white;
+	}
+	.h1 {
+		color: $white;
+	}
+	.h2 {
+		color: $white;
+	}
+	.h3 {
+		color: $white;
+	}
+	.h4 {
+		color: $white;
+	}
+	.h5 {
+		color: $white;
+	}
+	.h6 {
+		color: $white;
+	}
+}
+h1 {
+	@extend %extend_3;
 	font-size: 28px;
 }
-
-h2, .h2 {
+h2 {
+	@extend %extend_3;
 	font-size: 24px;
 }
-
-h3, .h3 {
+h3 {
+	@extend %extend_3;
 	font-size: 18px;
 }
-
-h4, .h4 {
+h4 {
+	@extend %extend_3;
 	font-size: 16px;
 }
-
-h5, .h5 {
+h5 {
+	@extend %extend_3;
 	font-size: 14px;
 }
-
-h6, .h6 {
+h6 {
+	@extend %extend_3;
 	font-size: 12px;
 }
-
-p, ol, ul, blockquote {
+.h1 {
+	@extend %extend_3;
+	font-size: 28px;
+}
+.h2 {
+	@extend %extend_3;
+	font-size: 24px;
+}
+.h3 {
+	@extend %extend_3;
+	font-size: 18px;
+}
+.h4 {
+	@extend %extend_3;
+	font-size: 16px;
+}
+.h5 {
+	@extend %extend_3;
+	font-size: 14px;
+}
+.h6 {
+	@extend %extend_3;
+	font-size: 12px;
+}
+p {
 	margin: 0 0 20px;
 }
-
+ol {
+	margin: 0 0 20px;
+}
+ul {
+	margin: 0 0 20px;
+}
 blockquote {
-	border-color: #f7f7f7;
+	margin: 0 0 20px;
+	border-color: $color_black_haze_approx;
+	&.serif-quote {
+		border: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
-
-blockquote.serif-quote {
-	border: 0;
-	padding-left: 0;
-	padding-right: 0;
-}
-
 .font-alt {
-	font-family: "Lato", sans-serif;
+	font-family: $font_0, $font_1;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-
 .font-serif {
-	font-family: "Libre Baskerville", "Times New Roman", sans-serif;
+	font-family: $font_2, $font_3, $font_1;
 	letter-spacing: 1px;
 	font-style: italic;
 }
-
 .rotate {
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	text-shadow: none !important;
+}
+.module-parallax {
+	background-attachment: fixed;
+}
+.module-title {
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 70px;
+	+ .module-subtitle {
+		margin-top: -35px;
+	}
+}
+.module-subtitle {
+	text-align: center;
+	font-size: 13px;
+	margin-bottom: 70px;
+}
+.module-icon {
+	font-size: 36px;
+	margin-bottom: 70px;
+}
+.divider {
+	margin: 0;
+}
+.copyright {
+	padding: 0 5px;
+}
+.bg-dark a {
+	color: $color_silver_chalice_approx;
+	&:hover {
+		color: $white;
+	}
+	&:focus {
+		color: $white;
+	}
 }
