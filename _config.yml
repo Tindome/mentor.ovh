@@ -1,7 +1,7 @@
 title: titre du site
 url: http://mentor.ovh
 description: ma description
-author: auteur par défaut
+author: Stéphane Torchy
 
 gems:
   - jekyll-seo-tag
