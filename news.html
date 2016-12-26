@@ -2,6 +2,12 @@
 layout: blog-grid
 ---
 
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
+
+{{site.github.url}} is url
+
  {% for post in site.posts %}
 <!-- POST -->
 	<div class="col-sm-6 col-md-6 col-lg-6 m-b-60">
