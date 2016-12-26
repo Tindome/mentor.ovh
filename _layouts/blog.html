@@ -1,1 +1,41 @@
-layouts blog
+<!-- jekyll.layout : blog.html -->
+<html>
+{% comment %}
+history
+    V1.00 2016/12/26
+{% endcomment %}
+    
+{% include head.html %}
+    <body>
+<div class="wrapper">        
+{% include navigation.html %}        
+    
+
+		<!-- HERO -->
+    <section class="module module-parallax bg-dark-30" data-background="assets/images/section-9.jpg" style="background-image: url(&quot;assets/images/section-9.jpg&quot;);">
+
+			<!-- HERO TEXT -->
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h1 class="mh-line-size-3 font-alt m-b-20">Blog</h1>
+						<h5 class="mh-line-size-4 font-alt">Our latest news and events</h5>
+					</div>
+				</div>
+
+			</div>
+			<!-- /HERO TEXT -->
+
+		</section>
+<!-- /HERO -->
+    <!-- SINGLE POST -->
+    {{content}}
+    <!-- /SINGLE POST -->
+        
+{% include social_links.html %} 
+{% include footer.html %}
+        </div> <!-- /.wraper -->
+    </body>
+{% include foot.html %}    
+<!-- /jekyll.layout : blog.html -->
