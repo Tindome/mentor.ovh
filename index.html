@@ -44,6 +44,14 @@ equivalent de readtime
 
 {{ post.content | number_of_words | divided_by: 200 }} minutes
 
+
+      <li>
+        <a class="post-link front-page" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="post-date front-page">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      </li>
+
+
 {% endfor %}
 
 
