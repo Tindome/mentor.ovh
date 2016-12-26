@@ -1,3 +1,4 @@
+url: http://mentor.ovh
 theme: jekyll-theme-midnight
 gems:
   - jekyll-seo-tag
