@@ -55,6 +55,7 @@ Modules
 .copyright {
 	padding: 0 5px;
 }
+/* sasss jekyll aime pas
 .navbar-custom + {
 	&.module {
 		padding: 200px 0;
@@ -62,4 +63,11 @@ Modules
 	&.module-small {
 		padding: 130px 0;
 	}
+}*/
+.navbar-custom + .module {
+	padding: 200px 0;
+}
+
+.navbar-custom + .module-small {
+	padding: 130px 0;
 }
