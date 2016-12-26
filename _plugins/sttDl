@@ -1,0 +1,13 @@
+module Jekyll
+  class DownloadTagStt < Liquid::Tag
+    def initialize(tag_name, text, tokens)
+      super
+      @text = text
+    end
+
+    def render(context)
+      require 'open-uri'
+      open(@text).read
+    end
+  end
+end
