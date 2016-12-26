@@ -12,7 +12,7 @@ layout: blog-grid
 				</a>
 			</div>
 			<div class="post-meta font-alt">
-				Par <a href="#">{{ post.author}}</a> / {{ post.date | date_to_string }} / NbDeCommentaires ???? .
+				Par <a href="#">{{if post.author}}{{ post.author}}{{else}}{{site.author}}</a> / {{ post.date | date_to_string }} / NbDeCommentaires ???? .
 			</div>
 			<div class="post-header">
 				<h5 class="post-title font-alt">
