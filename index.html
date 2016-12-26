@@ -41,9 +41,12 @@ title: "Ed."
       {{ post.content | readtime }} minutes
     {% endif %}
 
+equivalent de readtime
 
+{{ post.content | number_of_words | divided_by: 200 }} minutes
 
 {% endfor %}
+
 
 
 {% capture styles %}
