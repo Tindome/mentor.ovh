@@ -8,3 +8,221 @@
     margin: 0 auto;
     width: 100%;
 }
+
+
+
+import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic");
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------ */
+
+body {
+	background: #fff;
+	overflow-x: hidden;
+	-ms-overflow-style: scrollbar;
+	font: 400 14px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	border: 0;
+}
+
+/* ------------------------------------------------------------------
+Selection
+------------------------------------------------------------------ */
+
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+
+::-webkit-selection {
+	background: #000;
+	color: #fff;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+
+/* ------------------------------------------------------------------
+Transition elsements
+------------------------------------------------------------------- */
+
+a,
+.btn {
+	-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	   -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	     -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	        transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+
+/* ------------------------------------------------------------------
+Reset box-shadow
+------------------------------------------------------------------- */
+
+.btn,
+.well,
+.panel,
+.progress,
+.form-control, .form-control:hover, .form-control:focus {
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+}
+
+/* ------------------------------------------------------------------
+Reset border-radius
+------------------------------------------------------------------- */
+
+.well, .label, .alert,
+.modal-content {
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	    -ms-border-radius: 2px;
+	     -o-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+/* ------------------------------------------------------------------
+Typography
+------------------------------------------------------------------- */
+
+a {
+	color: rgba(17, 17, 17, 0.55);
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #111;
+	outline: 0;
+}
+
+.bg-dark a {
+	color: #aaa;
+}
+
+.bg-dark a:hover,
+.bg-dark a:focus {
+	color: #fff;
+}
+
+.text-light {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6,
+.text-light .h1, .text-light .h2, .text-light .h3, .text-light .h4, .text-light .h5, .text-light .h6 {
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.4;
+	font-weight: 400;
+	color: #111;
+}
+
+h1, .h1 {
+	font-size: 28px;
+}
+
+h2, .h2 {
+	font-size: 24px;
+}
+
+h3, .h3 {
+	font-size: 18px;
+}
+
+h4, .h4 {
+	font-size: 16px;
+}
+
+h5, .h5 {
+	font-size: 14px;
+}
+
+h6, .h6 {
+	font-size: 12px;
+}
+
+p, ol, ul, blockquote {
+	margin: 0 0 20px;
+}
+
+blockquote {
+	border-color: #f7f7f7;
+}
+
+blockquote.serif-quote {
+	border: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.font-alt {
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.font-serif {
+	font-family: "Libre Baskerville", "Times New Roman", sans-serif;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.rotate {
+	text-shadow: none !important;
+}
+
+
+/* ------------------------------------------------------------------
+Progress bars
+------------------------------------------------------------------- */
+
+.progress {
+	overflow: visible;
+	height: 4px;
+}
+
+.progress-title {
+	margin-top: 0;
+}
+
+.progress-bar {
+	position: relative;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+.progress-bar.pb-dark {
+	background: #111;
+}
+
+.progress-bar span {
+	position: absolute;
+	padding: 4px 0px;
+	display: block;
+	top: -28px;
+	right: 0;
+	opacity: 0;
+	line-height: 12px;
+	font-size: 12px;
+	color: #777;
+}
+
