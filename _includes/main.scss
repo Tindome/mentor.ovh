@@ -2,3 +2,14 @@ $text-color: hsl(0, 0%, 15%);
 $link-color: hsl(6, 79%, 49%);
 $base-fonts: "Open Sans", sans-serif;
 $heading-fonts: Montserrat, sans-serif;
+
+body {
+  background: hsl(0, 0%, 100%);
+  color: $text-color;
+  font-family: $base-fonts;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0 1.5em;
+}
