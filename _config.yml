@@ -1,3 +1,4 @@
 theme: jekyll-theme-midnight
 gems:
   - jekyll-seo-tag
+  - jekyll-sass-converter
