@@ -3,10 +3,10 @@ layout: blog-grid
 ---
 
  {% for post in site.posts %}
-						<!-- POST -->
-							<div class="col-sm-6 col-md-6 col-lg-6 m-b-60">
-								<div class="post">
-									<div class="post-media">
+<!-- POST -->
+	<div class="col-sm-6 col-md-6 col-lg-6 m-b-60">
+		<div class="post">
+			<div class="post-media">
 										<a href="{{ BASE_PATH }}{{ post.url }}">
 											<img src="assets/images/blog/blog-1.jpg" alt="">
 										</a>
