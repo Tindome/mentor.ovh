@@ -2,7 +2,7 @@ title: titre du site
 url: http://mentor.ovh
 description: ma description
 author: auteur par défaut
-theme: jekyll-theme-midnight
+
 gems:
   - jekyll-seo-tag
   - jekyll-sass-converter
