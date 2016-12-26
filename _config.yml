@@ -1,11 +1,7 @@
-title: Site de mentor
-description: Encore aucune idée pour le moment
 url: http://mentor.ovh
 theme: jekyll-theme-midnight
 gems:
   - jekyll-seo-tag
   - jekyll-sass-converter
   - jekyll-sitemap
-  
-#seo plugin
 
