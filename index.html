@@ -35,6 +35,8 @@ title: "Ed."
     {{ post.content }}
   </article>
 
+{% render_time Page generated at: %}
+
 {% if post.content | readtime == 0 %}
       less than a minute
     {% else %}
