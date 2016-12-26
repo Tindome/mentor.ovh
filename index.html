@@ -43,6 +43,14 @@ title: "Ed."
 {% endfor %}
 
 
+{% capture styles %}
+  {% download https://fonts.googleapis.com/css?family=Arvo %}
+  {% download https://fonts.googleapis.com/css?family=Open+Sans %}
+  {% include main.scss %}
+{% endcapture %}
+<style>{{ styles | scssify | strip }}</style>
+
+
 Premiere edition a 16:07
 Deuxieme edition a 16:04:40
 Edition 17:53:40
