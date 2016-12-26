@@ -2,13 +2,36 @@
 layout: blog-grid
 ---
 
-test
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+ {% for post in site.posts %}
+						<!-- POST -->
+							<div class="col-sm-6 col-md-6 col-lg-6 m-b-60">
+								<div class="post">
+									<div class="post-media">
+										<a href="{{ BASE_PATH }}{{ post.url }}">
+											<img src="assets/images/blog/blog-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-meta font-alt">
+										Par <a href="#">{{ post.author}}</a> / {{ post.date | date_to_string }} / NbDeCommentaires ???? .
+									</div>
+									<div class="post-header">
+										<h5 class="post-title font-alt">
+											<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+										</h5>
+									</div>
+									<div class="post-entry">
+										<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+									</div>
+									<div class="post-more-link font-alt">
+										<a href="{{ BASE_PATH }}{{ post.url }}">Read more</a>
+									</div>
+								</div>
+							</div>
+							<!-- /POST -->
   {% endfor %}
-</ul>
+
+
+
 
 
 <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
