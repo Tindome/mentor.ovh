@@ -1,6 +1,25 @@
+title: Site de mentor
+description: Encore aucune idée pour le moment
 url: http://mentor.ovh
 theme: jekyll-theme-midnight
 gems:
   - jekyll-seo-tag
   - jekyll-sass-converter
   - jekyll-sitemap
+  
+#seo plugin
+twitter:
+  username: tindomë
+facebook:
+  app_id: 1234
+  publisher: 1234
+  admins: 1234
+social:
+  name: Stéphane TORCHY
+  links:
+    - https://twitter.com/BenBalter
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/BenBalter
+    - https://plus.google.com/+BenBalter
+    - https://github.com/benbalter
+    - https://keybase.io/benbalter
