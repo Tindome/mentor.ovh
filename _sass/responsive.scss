@@ -1,0 +1,224 @@
+@media(min-width: 768px) {
+	.navbar-custom {
+		.navbar-brand {
+			padding-left: 0;
+		}
+		.dropdown-menu {
+			position: absolute;
+			display: block;
+			visibility: hidden;
+			opacity: 0;
+			.dropdown-toggle:after {
+				position: absolute;
+				display: block;
+				right: 9px;
+				top: 50%;
+				margin-top: -6px;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: 9px;
+				content: "\f105";
+				text-rendering: auto;
+			}
+		}
+		.navbar-nav > li > a {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.open > .dropdown-menu {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.navbar-transparent {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: transparent;
+		webkit-box-shadow: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		&.navbar-dark {
+			.navbar-brand {
+				color: $white_95;
+			}
+			.navbar-nav > li > a {
+				color: $white_95;
+			}
+			.nav > li > a {
+				&:focus {
+					color: $white_75;
+				}
+				&:hover {
+					color: $white_75;
+				}
+			}
+		}
+	}
+	.navbar-right .dropdown-menu {
+		right: auto;
+		left: 0;
+	}
+	.comment .comment {
+		margin-left: 100px;
+	}
+}
+@media(max-width: 992px) {
+	.mh-line-size-1 {
+		letter-spacing: 40px;
+		font-size: 26px;
+	}
+	.mh-line-size-2 {
+		letter-spacing: 28px;
+		font-size: 20px;
+	}
+	.mh-line-size-3 {
+		letter-spacing: 20px;
+		font-size: 22px;
+	}
+	.mh-line-size-4 {
+		letter-spacing: 8px;
+		font-size: 16px;
+	}
+	.navbar-custom {
+		letter-spacing: 1px;
+		font-size: 9px;
+	}
+	.work-item {
+		width: 33.3333%;
+		&.wide {
+			width: 66.6666%;
+		}
+		&.wide-tall {
+			width: 66.6666%;
+		}
+	}
+	.grid-sizer {
+		width: 33.3333%;
+	}
+}
+@media(max-width: 767px) {
+	.navbar-custom {
+		letter-spacing: 2px;
+		font-size: 10px;
+		.dropdown-menu {
+			.dropdown-toggle:after {
+				right: 15px;
+				content: "\f107";
+			}
+			.dropdown.open .dropdown-toggle:after {
+				right: 15px;
+				content: "\f106";
+			}
+		}
+		.navbar-nav .open .dropdown-menu {
+			.dropdown-header {
+				padding: 10px 25px;
+			}
+			.dropdown-menu {
+				.dropdown-header {
+					padding: 10px 35px;
+				}
+				> li > a {
+					padding: 10px 35px;
+				}
+			}
+			> li > a {
+				padding: 10px 25px;
+			}
+		}
+		.dropdown-toggle:after {
+			right: 15px;
+			content: "\f107";
+		}
+		.nav > .open > .dropdown-toggle:after {
+			right: 15px;
+			content: "\f106";
+		}
+	}
+	.mh-line-size-1 {
+		letter-spacing: 24px;
+		font-size: 26px;
+	}
+	.mh-line-size-2 {
+		letter-spacing: 16px;
+		font-size: 15px;
+	}
+	.mh-line-size-3 {
+		letter-spacing: 14px;
+		font-size: 14px;
+	}
+	.mh-line-size-4 {
+		letter-spacing: 4px;
+		font-size: 14px;
+	}
+	.mh-line-size-5 {
+		letter-spacing: 2px;
+		font-size: 13px;
+	}
+	.mh-line-size-6 {
+		font-size: 13px;
+	}
+	.work-item {
+		width: 50%;
+		&.wide {
+			width: 100%;
+		}
+		&.wide-tall {
+			width: 100%;
+		}
+	}
+	.grid-sizer {
+		width: 50%;
+	}
+	.navbar-transparent.navbar-dark {
+		.light-logo {
+			display: none !important;
+		}
+		.dark-logo {
+			display: block !important;
+		}
+	}
+	.filters li {
+		display: block;
+		margin: 0 10px 10px;
+		&:last-child {
+			margin: 0 10px 140px;
+		}
+	}
+}
+@media(max-width: 500px) {
+	.mh-line-size-1 {
+		letter-spacing: 12px;
+		font-size: 26px;
+	}
+	.mh-line-size-2 {
+		letter-spacing: 6px;
+		font-size: 14px;
+	}
+	.mh-line-size-3 {
+		letter-spacing: 4px;
+		font-size: 13px;
+	}
+	.mh-line-size-4 {
+		letter-spacing: 4px;
+		font-size: 12px;
+	}
+	.mh-line-size-5 {
+		letter-spacing: 2px;
+		font-size: 11px;
+	}
+	.mh-line-size-6 {
+		font-size: 12px;
+	}
+	.work-item {
+		width: 100%;
+		&.wide {
+			width: 100%;
+		}
+		&.wide-tall {
+			width: 100%;
+		}
+	}
+	.grid-sizer {
+		width: 100%;
+	}
+}
