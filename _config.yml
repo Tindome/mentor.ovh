@@ -1,7 +1,26 @@
+title: titre du site
 url: http://mentor.ovh
+description: ma description
+author: auteur par défaut
 theme: jekyll-theme-midnight
 gems:
   - jekyll-seo-tag
   - jekyll-sass-converter
   - jekyll-sitemap
 
+#seo plugin
+twitter:
+  username: benbalter
+facebook:
+  app_id: 1234
+  publisher: 1234
+  admins: 1234
+social:
+  name: Ben Balter
+  links:
+    - https://twitter.com/BenBalter
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/BenBalter
+    - https://plus.google.com/+BenBalter
+    - https://github.com/benbalter
+    - https://keybase.io/benbalter
