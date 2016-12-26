@@ -8,6 +8,8 @@
    ver. 0.0.1
 */
 
+@import "globals";
+
 .wrapper {
     background: #fff;
     overflow: hidden;
@@ -235,3 +237,4 @@ Progress bars
 
 @import "navigation";
 @import "hero";
+@import "search";
