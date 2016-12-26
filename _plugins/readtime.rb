@@ -18,4 +18,4 @@ module ReadTime
   end
 end
 
-Liquid::Template.register_filter(ReadTime)
+Liquid::Template.register_filter(ReadTime1)
