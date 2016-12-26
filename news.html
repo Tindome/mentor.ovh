@@ -16,14 +16,14 @@ layout: blog-grid
 			</div>
 			<div class="post-header">
 				<h5 class="post-title font-alt">
-				<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+				<a href="{{post.url | prepend:site.github.url }}">{{ post.title }}</a>
 				</h5>
 			</div>
 			<div class="post-entry">
 				<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
 			</div>
 			<div class="post-more-link font-alt">
-				<a href="{{ BASE_PATH }}{{ post.url }}">Read more</a>
+				<a href="{{post.url | prepend:site.github.url }}">En savoir plus</a>
 			</div>
 		</div>
 	</div>
