@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title:  "La note de cadrage"
 summary: "Oh gosh what do I say I'm so nervous umm hello"
 date:   2016-12-25 
