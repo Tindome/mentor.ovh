@@ -1,16 +1,15 @@
 <!-- template : blog-sidebar.html -->
-			<div class="col-sm-3 m-t-sm-60">
-
-						<!-- WIDGET -->
-						<div class="widget">
-							<form role="form">
-								<div class="search-box">
-									<input type="text" class="form-control" placeholder="Search...">
-									<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-								</div>
-							</form>
-						</div>
-						<!-- /WIDGET -->
+	<div class="col-sm-3 m-t-sm-60">
+        <!-- WIDGET -->
+		<div class="widget">
+			<form role="form" action="{{'/search.html'|prepend:site.github.url}}" method="get">
+				<div class="search-box">
+					<input type="text" class="form-control" placeholder="Search...">
+					<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+				</div>
+			</form>
+		</div>
+		<!-- /WIDGET -->
 						
 						<!-- WIDGET -->
 						<div class="widget">
