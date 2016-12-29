@@ -20,7 +20,8 @@ layout: post-grid
 				</h5>
 			</div>
 			<div class="post-entry">
-				<p>{{ post.excerpt }}</p>
+				<!--<p>{{ post.excerpt }}</p> + <!--more--> -->
+				<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
 			</div>
 			<div class="post-more-link font-alt">
 				<a href="{{post.url | prepend:site.github.url }}">Continuer la lecture </a>
