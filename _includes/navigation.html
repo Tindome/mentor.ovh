@@ -23,14 +23,14 @@
 			
 					<ul class="nav navbar-nav navbar-right">
 			
-						<li><a href="#hero" class="section-scroll">Home</a></li>
-						<li><a href="#about" class="section-scroll">About</a></li>
-						<li><a href="#services" class="section-scroll">Services</a></li>
-						<li><a href="#portfolio" class="section-scroll">Portfolio</a></li>
-						<li><a href="#features" class="section-scroll">Features</a></li>
-						<li><a href="#shop" class="section-scroll">Shop</a></li>
-						<li><a href="news.html" class="section-scroll">News</a></li>
-						<li><a href="#contact" class="section-scroll">Contact</a></li>
+						<li><a href="{{#hero|prepend:site.github.url}}" class="section-scroll">Home</a></li>
+						<li><a href="{{#about|prepend:site.github.url}}" class="section-scroll">About</a></li>
+						<li><a href="{{#services|prepend:site.github.url}}" class="section-scroll">Services</a></li>
+						<!--<li><a href="#portfolio" class="section-scroll">Portfolio</a></li>
+						<li><a href="#features" class="section-scroll">Features</a></li>-->
+						<li><a href="{{#shop|prepend:site.github.url}}" class="section-scroll">Shop</a></li>
+						<li><a href="{{news.html|prepend:site.github.url}}" class="section-scroll">News</a></li>
+						<li><a href="{{#contact|prepend:site.github.url}}" class="section-scroll">Contact</a></li>
 			
 						<li><a href="#" class="toggle-menu menu-top push-body"><i class="fa fa-search"></i></a></li>
 			
