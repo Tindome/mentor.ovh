@@ -11,206 +11,53 @@ history
 {% include navigation.html %}        
     
 
-		<!-- HERO -->
-<section class="module module-parallax bg-dark-30" data-background="assets/images/section-9.jpg" style="background-image: url(&quot;assets/images/section-9.jpg&quot;);">
+<!-- HERO -->
+<section class="module module-parallax bg-dark-30" data-background="{{'/assets/images/section-9.jpg'| prepend:site.github.url}}" style="background-image: url(&quot;assets/images/section-9.jpg&quot;);">
 
-			<!-- HERO TEXT -->
-			<div class="container">
-
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h1 class="mh-line-size-3 font-alt m-b-20">Blog</h1>
-						<h5 class="mh-line-size-4 font-alt">Our latest news and events</h5>
-					</div>
-				</div>
-
+	<!-- HERO TEXT -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1 class="mh-line-size-3 font-alt m-b-20">Blog</h1>
+				<h5 class="mh-line-size-4 font-alt">Nos dernières publications et évenements</h5>
 			</div>
-			<!-- /HERO TEXT -->
+		</div>
+	</div>
+	<!-- /HERO TEXT -->
 
-		</section>
-		<!-- /HERO -->        
+</section>
+<!-- /HERO -->        
         
 <!-- grid-- > 
 <section class="module">
-
-			<div class="container">
-
+    <div class="container">
+        <div class="row">
+        <!-- POSTS COLUMN -->
+		    <div class="col-sm-9">
+                <div class="row multi-columns-row">
+				{{content}}
+                </div>
+		        <!-- PAGINATION -->
 				<div class="row">
-
-					<!-- POSTS COLUMN -->
-					<div class="col-sm-9">
-
-						<div class="row multi-columns-row">
-							
-							    {{content}}
-
-	
-
-						</div>
-
-						<!-- PAGINATION -->
-						<div class="row">
-
-							<div class="col-sm-12 text-center m-t-60">
-								<ul class="pagination font-alt">
-									<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-									<li><a href="#">1</a></li>
-									<li class="active"><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-								</ul>
-							</div>
-
-						</div>
-						<!-- /PAGINATION -->
-
-					</div>
-					<!-- POSTS COLUMN -->
-
-					<!-- SIDEBAR -->
-					<div class="col-sm-3 m-t-sm-60">
-
-						<!-- WIDGET -->
-						<div class="widget">
-							<form role="form">
-								<div class="search-box">
-									<input type="text" class="form-control" placeholder="Search...">
-									<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-								</div>
-							</form>
-						</div>
-						<!-- /WIDGET -->
-						
-						<!-- WIDGET -->
-						<div class="widget">
-							<h5 class="widget-title font-alt">Categories</h5>
-							<ul>
-								<li><a href="#">Photography - 8</a></li>
-								<li><a href="#">Web Design - 14</a></li>
-								<li><a href="#">Illustration - 34</a></li>
-								<li><a href="#">Marketing - 12</a></li>
-								<li><a href="#">WordPress - 9</a></li>
-							</ul>
-						</div>
-						<!-- /WIDGET -->
-						
-						<!-- WIDGET -->
-						<div class="widget">
-							<h5 class="widget-title font-alt">Popular posts</h5>
-							<ul class="widget-posts">
-						
-								<li class="clearfix">
-									<div class="widget-posts-image">
-										<a href="#">
-											<img src="https://s3.amazonaws.com/uifaces/faces/twitter/draganbabic/128.jpg" alt="">
-										</a>
-									</div>
-									<div class="widget-posts-body">
-										<h6 class="widget-posts-title font-alt">
-											<a href="#">Designer Desk Essentials</a>
-										</h6>
-										<div class="widget-posts-meta">
-											By <a href="#">Mark Stone</a>, 23 November
-										</div>
-									</div>
-								</li>
-						
-								<li class="clearfix">
-									<div class="widget-posts-image">
-										<a href="#">
-											<img src="https://s3.amazonaws.com/uifaces/faces/twitter/sdw/128.jpg" alt="">
-										</a>
-									</div>
-									<div class="widget-posts-body">
-										<h6 class="widget-posts-title font-alt">
-											<a href="#">Realistic Business Card</a>
-										</h6>
-										<div class="widget-posts-meta">
-											By <a href="#">Mark Stone</a>, 15 November
-										</div>
-									</div>
-								</li>
-						
-								<li class="clearfix">
-									<div class="widget-posts-image">
-										<a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jina/128.jpg" alt=""></a>
-									</div>
-									<div class="widget-posts-body">
-										<h6 class="widget-posts-title font-alt">
-											<a href="#">Eco bag Mockup</a>
-										</h6>
-										<div class="widget-posts-meta">
-											By <a href="#">Mark Stone</a>, 5 November
-										</div>
-									</div>
-								</li>
-						
-								<li class="clearfix">
-									<div class="widget-posts-image">
-										<a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/soffes/128.jpg" alt=""></a>
-									</div>
-									<div class="widget-posts-body">
-										<h6 class="widget-posts-title font-alt">
-											<a href="#">Bottle Mockup</a>
-										</h6>
-										<div class="widget-posts-meta">
-											By <a href="#">Mark Stone</a>, 1 November
-										</div>
-									</div>
-								</li>
-						
-							</ul>
-						</div>
-						<!-- /WIDGET -->
-						
-						<!-- WIDGET -->
-						<div class="widget">
-							<h5 class="widget-title font-alt">Recent Comments</h5>
-							<ul>
-								<li>Maria on <a href="#">Designer Desk Essentials</a></li>
-								<li>John on <a href="#">Realistic Business Card Mockup</a></li>
-								<li>Andy on <a href="#">Eco bag Mockup</a></li>
-								<li>Jack on <a href="#">Bottle Mockup</a></li>
-								<li>Mark on <a href="#">Our trip to the Alps</a></li>
-							</ul>
-						</div>
-						<!-- /WIDGET -->
-						
-						<!-- WIDGET -->
-						<div class="widget">
-							<h5 class="widget-title font-alt">Simple Text</h5>
-							The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
-						</div>
-						<!-- /WIDGET -->
-						
-						<!-- WIDGET -->
-						<div class="widget">
-							<h5 class="widget-title font-alt">Tags</h5>
-							<div class="tags">
-								<a href="#" rel="tag">Blog</a>
-								<a href="#" rel="tag">Photo</a>
-								<a href="#" rel="tag">Video</a>
-								<a href="#" rel="tag">Image</a>
-								<a href="#" rel="tag">Minimal</a>
-								<a href="#" rel="tag">Post</a>
-								<a href="#" rel="tag">Theme</a>
-								<a href="#" rel="tag">Ideas</a>
-								<a href="#" rel="tag">Tags</a>
-								<a href="#" rel="tag">Bootstrap</a>
-								<a href="#" rel="tag">Popular</a>
-								<a href="#" rel="tag">English</a>
-							</div>
-						</div>
-						<!-- /WIDGET -->
-
-					</div>
-					<!-- /SIDEBAR -->
-
-				</div>
-
-			</div>
-
-		</section>
+                    <div class="col-sm-12 text-center m-t-60">
+						<ul class="pagination font-alt">
+							<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+						</ul>
+				    </div>
+                </div>
+				<!-- /PAGINATION -->
+            </div>
+		<!-- POSTS COLUMN -->
+        <!-- SIDEBAR -->
+        <!-- {{ includes blog-sidebar.html }} -->
+		<!-- /SIDEBAR -->
+	</div>
+</div>
+</section>
 <!-- /grid -->
         
 
