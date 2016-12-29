@@ -1,5 +1,5 @@
 ---
-layout: blog-grid
+layout: post-grid
 ---
 
  {% for post in site.posts %}
@@ -20,10 +20,10 @@ layout: blog-grid
 				</h5>
 			</div>
 			<div class="post-entry">
-				<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+				<p>{{ post.excerpt }}</p>
 			</div>
 			<div class="post-more-link font-alt">
-				<a href="{{post.url | prepend:site.github.url }}">En savoir plus</a>
+				<a href="{{post.url | prepend:site.github.url }}">Contiuer la lecture plus</a>
 			</div>
 		</div>
 	</div>
